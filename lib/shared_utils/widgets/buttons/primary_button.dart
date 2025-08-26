@@ -11,7 +11,7 @@ class PrimaryButtons {
     required this.btnText,
   });
 
-  //Welcome page Register button
+  //Register/Login/SignIn
   Container mainButton() {
     return Container(
       margin: EdgeInsets.all(40),
@@ -55,5 +55,6 @@ class PrimaryButtons {
       ),
     );
   }
+
 
 }
