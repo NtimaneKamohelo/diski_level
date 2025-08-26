@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "661513761762",
+    "project_id": "diskilevel",
+    "storage_bucket": "diskilevel.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661513761762:android:c69cb6ddba237003db7fbb",
+        "android_client_info": {
+          "package_name": "com.example.diski_level"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTtDu1HgPk_JAk1S961wy270RV516E2_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

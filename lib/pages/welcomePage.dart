@@ -39,11 +39,37 @@ class _WelcomePageState extends State<WelcomePage> {
                 ),
               ),
 
+
               //Register Button welcome page
-              PrimaryButtons(
-                onPressed: () => LoginScreen, 
-                btnText: "Register"
-              ).mainButton(),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  PrimaryButtons(
+                    onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => LoginScreen())),
+                    btnText: "Register"
+                  ).mainButton(),
+
+                  //OR tag
+
+
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      PrimaryButtons(
+                        onPressed: () => LoginScreen,
+                        btnText: ""
+                      ).mediaButton(FaIcon(FontAwesomeIcons.google, color: Colors.red)),
+                        
+                      PrimaryButtons(
+                        onPressed: () => LoginScreen,
+                        btnText: ""
+                      ).mediaButton(const FaIcon(FontAwesomeIcons.facebook, color: Colors.blue)),
+                    ],
+                  )
+                ],
+              ),
+
+
               
             ],
           ),

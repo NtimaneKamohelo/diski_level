@@ -36,25 +36,23 @@ class PrimaryButtons {
   }
 
   //Social Media Login
-  Container mediaButton(Widget icon){
+  Container mediaButton(Widget Icon){
     return Container(
       margin: const EdgeInsets.only(top: 15, left: 40, right: 40),
-      child: ElevatedButton.icon(
-        onPressed: onPressed, 
-        style: ElevatedButton.styleFrom(
-          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-          backgroundColor: Colors.grey[100],
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10)
-          )
-        ),
-        label: Text(
-          btnText,
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            color: Colors.black,
+      child: IconButton(
+          onPressed: onPressed,
+          icon: Icon,
+          style: IconButton.styleFrom(
+            padding: EdgeInsets.symmetric(horizontal: 25, vertical: 25),
+            backgroundColor: Color(0xFFDCD0A8),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10),
+            ),
+            elevation: 8,
+            shadowColor: Colors.grey
           ),
-        ))
+
+      ),
     );
   }
 
