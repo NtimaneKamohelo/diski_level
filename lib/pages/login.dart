@@ -1,3 +1,4 @@
+import 'package:diski_level/pages/registerscreen.dart';
 import 'package:diski_level/pages/welcomePage.dart';
 import 'package:diski_level/shared_utils/widgets/buttons/primary_button.dart';
 import 'package:diski_level/shared_utils/widgets/textfields/primary_textfileds.dart';
@@ -16,9 +17,14 @@ class _LoginScreenState extends State<LoginScreen> {
   final TextEditingController passwordController = TextEditingController();
   @override
   Widget build(BuildContext context) {
+    //final double screenHeight = MediaQuery.of(context).size.height;
+    //final double keyboardHeight = MediaQuery.of(context).viewInsets.bottom;
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Center(
+        //heightFactor: screenHeight - keyboardHeight,
         child: SingleChildScrollView(
+          physics: ClampingScrollPhysics(),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -67,6 +73,12 @@ class _LoginScreenState extends State<LoginScreen> {
                   )
                 ],
               ),
+              
+              //Do you have an account button?
+              PrimaryButtons(
+                  onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => Registerscreen())),
+                  btnText: "Do you have an account? SignUp"
+              ).registerTextButton(),
             ],
           ),
         ),

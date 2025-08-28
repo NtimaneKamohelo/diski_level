@@ -75,6 +75,7 @@ class primaryTextfields{
 
             ),
             prefixIcon: prefixIcon,
+            suffixIcon: suffixIcon,
             hintText: hintText,
             hintStyle: TextStyle(
               color: Colors.grey[400],

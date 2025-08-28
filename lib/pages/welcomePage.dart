@@ -56,16 +56,16 @@ class _WelcomePageState extends State<WelcomePage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       PrimaryButtons(
-                        onPressed: () => LoginScreen,
+                        onPressed: () => {},
                         btnText: ""
-                      ).mediaButton(FaIcon(FontAwesomeIcons.google, color: Colors.red)),
+                      ).mediaButton(const FaIcon(FontAwesomeIcons.google, color: Colors.red)),
                         
                       PrimaryButtons(
-                        onPressed: () => LoginScreen,
+                        onPressed: () => {},
                         btnText: ""
                       ).mediaButton(const FaIcon(FontAwesomeIcons.facebook, color: Colors.blue)),
                     ],
-                  )
+                  ),
                 ],
               ),
 

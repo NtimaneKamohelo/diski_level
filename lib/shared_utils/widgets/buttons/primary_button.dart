@@ -56,5 +56,26 @@ class PrimaryButtons {
     );
   }
 
+  //Do you have an account? -> Register textbutton
+  Container registerTextButton() {
+    return Container(
+      margin: EdgeInsets.only(top: 50),
+      alignment: Alignment.bottomCenter,
+      child: TextButton(
+        onPressed: onPressed,
+        style: TextButton.styleFrom(
+
+          backgroundColor: Colors.black12
+        ),
+        child: Text(
+          btnText,
+          style: TextStyle(
+            color: Colors.black,
+          ),
+        ),
+      ),
+    );
+  }
+
 
 }
