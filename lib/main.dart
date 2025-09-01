@@ -1,5 +1,5 @@
-import 'package:diski_level/pages/login.dart';
-import 'package:diski_level/pages/welcomePage.dart';
+import 'package:diski_level/Feature/splash_screen/presentation/splash_screen.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: WelcomePage(),
+      home: splashScreen(),
     );
   }
 }
