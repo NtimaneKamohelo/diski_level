@@ -15,7 +15,7 @@ class _splashScreenState extends State<splashScreen>  with SingleTickerProviderS
   //2. late- Delayed initialization- Initialized before used -  holds current state of animation
 
   @override
-  void initState() { //InitState- called once.
+  void initState() { //3. InitState- called once.
     // TODO: implement initState
     super.initState();
 
@@ -39,13 +39,14 @@ class _splashScreenState extends State<splashScreen>  with SingleTickerProviderS
 
   }
 
-  //dispose method- called when widget is removed from widget tree permanently. frees memory.
+  //4. dispose method- called when widget is removed from widget tree permanently. frees memory.
   @override
   void dispose() {
     // TODO: implement dispose
     _animationController.dispose();
     super.dispose();
   }
+  
   @override
   Widget build(BuildContext context) {
     return const Placeholder();
