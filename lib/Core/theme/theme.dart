@@ -29,7 +29,7 @@ class AppTheme {
   static const accentRed = Color(0xFFCB4E56); // Rust Red
   static const accentGold = Color(0xFFD4AF37); //Rich Gold
   static const accentGreen = Color(0xFF68A678); //Sage green
-  static const accentBlue = Color(0xFF4B6D8B) //State blue
+  static const accentBlue = Color(0xFF4B6D8B); //State blue
 
   //Light Theme
   static ThemeData lightTheme = ThemeData(
@@ -71,7 +71,68 @@ class AppTheme {
       displayMedium: TextStyle(
         fontFamily: _headingFont,
         fontSize: 28,
+        fontWeight: FontWeight.bold,
+        color: _lightTextPrimaryColor,
       ),
-    )
+      displaySmall: TextStyle(
+        fontFamily: _headingFont,
+        fontSize: 24,
+        fontWeight: FontWeight.bold,
+        color: _lightTextPrimaryColor,
+      ),
+      headlineMedium: TextStyle(
+        fontFamily: _headingFont,
+        fontSize: 22,
+        fontWeight: FontWeight.w600,
+        color: _lightTextPrimaryColor,
+      ),
+      headlineSmall: TextStyle(
+        fontFamily: _headingFont,
+        fontSize: 20,
+        fontWeight: FontWeight.w600,
+        color: _lightTextPrimaryColor,
+      ),
+      titleMedium: TextStyle(
+        fontFamily: _bodyFont,
+        fontSize: 16,
+        fontWeight: FontWeight.w600,
+        color: _lightTextPrimaryColor,
+      ),
+      titleSmall: TextStyle(
+        fontFamily: _bodyFont,
+        fontSize: 14,
+        fontWeight: FontWeight.w600,
+        color: _lightTextPrimaryColor,
+      ),
+      bodyLarge: TextStyle(
+        fontFamily: _bodyFont,
+        fontSize: 16,
+        fontWeight: FontWeight.normal,
+        color: _lightTextPrimaryColor,
+      ),
+      bodyMedium: TextStyle(
+        fontFamily: _bodyFont,
+        fontSize: 14,
+        fontWeight: FontWeight.normal,
+        color: _lightTextPrimaryColor,
+      ),
+      bodySmall: TextStyle(
+        fontFamily: _bodyFont,
+        fontSize: 12,
+        fontWeight: FontWeight.normal,
+        color: _lightTextPrimaryColor,
+      ),
+      labelLarge: TextStyle(
+        fontFamily: _bodyFont,
+        fontSize: 14,
+        fontWeight: FontWeight.w600,
+        color: _lightTextPrimaryColor,
+      ),
+    ),
+    cardTheme: CardThemeData(
+      elevation: 2,
+      margin: const EdgeInsets.all(8),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+    ),
   );
 }
