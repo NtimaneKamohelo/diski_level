@@ -163,5 +163,45 @@ class AppTheme {
         ),
       ),
     ),
+    textButtonTheme: TextButtonThemeData(
+      style: TextButton.styleFrom(
+        foregroundColor: _lightPrimaryColor,
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+        textStyle: const TextStyle(
+          fontFamily: _bodyFont,
+          fontSize: 14,
+          fontWeight: FontWeight.w600,
+          letterSpacing: 0.5
+        )
+      ),
+    ),
+    inputDecorationTheme: InputDecorationTheme(
+      filled: true,
+      fillColor: Colors.white,
+      contentPadding:  const EdgeInsets.all(16),
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(12),
+        borderSide: BorderSide.none
+      ),
+      enabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(12),
+        borderSide: BorderSide(color: _lightSecondaryColor.withOpacity(0.3), width: 1)
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(12),
+        borderSide: const BorderSide(color: _lightPrimaryColor, width: 2),
+      ),
+      hintStyle: TextStyle(
+        fontFamily: _bodyFont,
+        color: _lightTextSecondaryColor.withOpacity(0.7),
+        fontSize: 14,
+      ),
+      labelStyle: const TextStyle(
+        fontFamily: _bodyFont,
+        color: _lightTextPrimaryColor,
+        fontSize: 16,
+      ),
+    ),
   );
 }
