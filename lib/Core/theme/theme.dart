@@ -506,4 +506,35 @@ class AppTheme {
       })
     )
   );
-},
+
+  // Helper methods for other theme configurations
+  static ThemeData getTheme(bool isDark) {
+    return isDark ? darkTheme : lightTheme;
+  }
+
+  // Custom color getters based on current theme
+  static Color getPrimaryColor(bool isDark) {
+    return isDark ? _darkPrimaryColor : _lightPrimaryColor;
+  }
+
+  static Color getSecondaryColor(bool isDark) {
+    return isDark ? _darkSecondaryColor : _lightSecondaryColor;
+  }
+
+  static Color getBackgroundColor(bool isDark) {
+    return isDark ? _darkBackgroundColor : _lightBackgroundColor;
+  }
+
+  static Color getSurfaceColor(bool isDark) {
+    return isDark ? _darkSurfaceColor : _lightSurfaceColor;
+  }
+
+  static Color getTextPrimaryColor(bool isDark) {
+    return isDark ? _darkTextPrimaryColor : _lightPrimaryColor;
+  }
+
+  static Color getTextSecondaryColor(bool isDark) {
+    return isDark ? _darkTextSecondaryColor : _lightTextSecondaryColor;
+  }
+
+}
