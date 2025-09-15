@@ -1,5 +1,7 @@
+import 'package:diski_level/services/local_storage_service.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 //enum
 enum ThemeOption {
   light,
@@ -62,3 +64,16 @@ class ThemeState extends Equatable { //Represents the current state of the appli
 }
 
 //Bloc
+class ThemeBloc extends Bloc<ThemeEvent, ThemeState> {
+  final LocalStorageService _storageService;
+
+  ThemeBloc(this._storageService) :   super(ThemeState.initial()) {
+
+  }
+
+  //Load event
+  Future<void> _onLoadTheme(LoadTheme event, Emitter<ThemeState> emit) async {
+    final savedTheme = _storageService.getString(key);
+  }
+
+}
